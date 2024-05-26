@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> sorn davit Assignment</title>
+  </head>
+  <style>
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+}
+
+.header {
+  background: tomato;
+  height: 120px;
+}
+
+footer {
+  background: lightgreen;
+  height: 80px;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+  height: 300px;
+  font-size: 24px;
+}
+
+.aside1 {
+  background: yellow;
+}
+
+.aside2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3;
+  }
+
+  .aside1 {
+    order: 1;
+  }
+
+  .aside2 {
+    order: 2;
+  }
+  .main {
+    order: 2;
+  }
+
+  .footer {
+    order: 4;
+  }
+}
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1;
+  }
+}
+
+  </style>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Header</h1>
+      </header>
+      <article class="main">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa explicabo voluptas magnam doloribus error eius quas praesentium. Saepe expedita magni a, aut odio, quasi optio voluptatibus voluptas minima asperiores corrupti?
+        </p>
+      </article>
+      <aside class="aside aside1">
+        <h1>code is no ezy☻</h1>
+      </aside>
+      <aside class="aside aside2">
+        <h1>music i'ts good for me ♪♪♪</h1>
+      </aside> 
+      <footer class="footer">
+        <h1>Footer</h1>
+      </footer>
+    </div>
+  </body>
+</html>
